@@ -1,0 +1,15 @@
+         .global     _main                   ; declares the starting entry point
+         .align      2
+
+_main:
+         mov         X0,   #1                ; 1 = stdout, the display
+         adr         X1,   message           ; address of start of message
+         mov         X2,   #13               ; length of output string
+         mov         X16,  #4                ; "4" is write system function
+         svc         0                       ; call the system
+_exit:
+         mov         X0,   #0                ; returns zero to O/S
+         mov         X16,  #1                ; exit system function
+         svc         0                       ; call the system
+
+message: .ascii      "\n \n Hello, World! \n \n"
