@@ -1,0 +1,61 @@
+# macOS
+.DS_Store
+
+# Editors/IDEs
+.idea/
+.vscode/
+*.swp
+*~
+
+# Build output dirs (pick the ones you use)
+build/
+bin/
+obj/
+out/
+cmake-build-*/
+DerivedData/
+
+# CMake-generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Testing/
+Makefile
+# (keep compile_commands.json if you use clangd)
+# compile_commands.json
+
+# Make/clang deps
+*.d
+
+# Compiled objects & libs
+*.o
+*.lo
+*.la
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+a.out
+
+# Debug/profiling
+*.dSYM/
+*.gcno
+*.gcda
+*.prof
+*.profraw
+
+# Linker/assembler aux files
+*.map
+*.lst
+
+# Xcode (if you ever open the folder in Xcode)
+*.xcodeproj/
+*.xcworkspace/
+
+# Logs
+*.log
