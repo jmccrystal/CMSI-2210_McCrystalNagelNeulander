@@ -1,0 +1,15 @@
+Convert 101 to decimal = 5
+Convert 1010101 to decimal = 85
+Convert 0101010 to decimal = 42
+Convert 11111111 to decimal = 255
+Convert 1100110011001101 to decimal = 52429
+Convert 11111111111111111111 to decimal = 1048575
+Convert 111100001111 to decimal = 3855
+Convert 100000000000 to decimal = 2048
+Convert 101010111100110111101111 to decimal = 11259375
+Convert 5421 to binary = 1010100101101
+Convert 80 to binary = 1010000
+Convert 12345 to binary = 11000000111001
+Convert 15 to binary = 1111
+Convert 65535 to binary = 1111111111111111
+Convert 32767 to binary = 111111111111111
