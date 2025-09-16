@@ -1,0 +1,28 @@
+1. Binary 10111101 in hex is:
+189
+2. Binary 1011110100000001 as an unsigned decimal is:
+48385
+3. Binary 1011110100000001 as a signed decimal is:
+-17151
+4. Decimal 8000 encoded in 16-bits (unsigned) is in hex:
+1F40
+5. Decimal 8000 encoded in 16-bits (signed) is in hex:
+1F40
+6. Decimal -11 encoded in 16-bits (signed) is in hex:
+FFF5
+Decimal -32717 encoded in 16-bits (signed) is in hex:
+Hex FAC3 in binary is:
+Hex FAC3 as an unsigned decimal is:
+Hex FAC3 as a signed decimal is:
+Hex 0064 in binary is:
+Hex 0064 as an unsigned decimal is:
+Hex 0064 as a signed decimal is:
+Hex 8000 in binary is:
+Hex 8000 as an unsigned decimal is:
+Hex 8000 as a signed decimal is:
+If we had 20-bit registers, the smallest signed decimal integer value would be:
+If we had 20-bit registers, the largest signed decimal integer value would be:
+The modular sum of 16-bit hex values 3511 + 4FFC is:
+The saturated sum of 16-bit hex values 3511 + 4FFC is:
+The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
+The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N):
