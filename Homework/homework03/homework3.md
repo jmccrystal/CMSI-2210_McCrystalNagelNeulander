@@ -1,6 +1,6 @@
 Easy:
 1. Binary 10111101 in hex is:
-189
+BD
 2. Binary 1011110100000001 as an unsigned decimal is:
 48385
 3. Binary 1011110100000001 as a signed decimal is:
@@ -11,38 +11,68 @@ Easy:
 1F40
 6. Decimal -11 encoded in 16-bits (signed) is in hex:
 FFF5
-Decimal -32717 encoded in 16-bits (signed) is in hex:
-Hex FAC3 in binary is:
-Hex FAC3 as an unsigned decimal is:
-Hex FAC3 as a signed decimal is:
-Hex 0064 in binary is:
-Hex 0064 as an unsigned decimal is:
-Hex 0064 as a signed decimal is:
-Hex 8000 in binary is:
-Hex 8000 as an unsigned decimal is:
-Hex 8000 as a signed decimal is:
-If we had 20-bit registers, the smallest signed decimal integer value would be:
-If we had 20-bit registers, the largest signed decimal integer value would be:
-The modular sum of 16-bit hex values 3511 + 4FFC is:
-The saturated sum of 16-bit hex values 3511 + 4FFC is:
-The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
-The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N):
+7. Decimal -32717 encoded in 16-bits (signed) is in hex:
+8033
+8. Hex FAC3 in binary is:
+1111101011000011
+9. Hex FAC3 as an unsigned decimal is:
+64195
+10. Hex FAC3 as a signed decimal is:
+-1341
+11. Hex 0064 in binary is:
+0000 0000 0110 0100
+12. Hex 0064 as an unsigned decimal is:
+100
+13. Hex 0064 as a signed decimal is:
+100
+14. Hex 8000 in binary is:
+1000000000000000
+15. Hex 8000 as an unsigned decimal is:
+32768
+16. Hex 8000 as a signed decimal is:
+-32768
+17. If we had 20-bit registers, the smallest signed decimal integer value would be:
+-524288
+18. If we had 20-bit registers, the largest signed decimal integer value would be:
+524287
+19. The modular sum of 16-bit hex values 3511 + 4FFC is:
+850D
+20. The saturated sum of 16-bit hex values 3511 + 4FFC is:
+7FFF
+21. The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
+N
+22. The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N):
+Y
 
 Medium:
-The modular sum of 16-bit hex values 6159 + F702 is:
-The saturated sum of 16-bit hex values 6159 + F702 is:
-The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N):
-The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N):
-The modular sum of 16-bit hex values EEEE + C00C is:
-The saturated sum of 16-bit hex values EEEE + C00C is:
-The 16-bit operation 9EEE + AB0C has a carry (Y or N):
-The 16-bit operation 9EEE + AB0C has a overflows (Y or N):
-The negation of 16-bit word 0xB00F is:
-The negation of 16-bit word 0x2232 is:
-The negation of 16-bit word 0x8000 is:
-The negation of 32-bit word 0xFFF329BA is:
-Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:
-Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:
+23. The modular sum of 16-bit hex values 6159 + F702 is:
+585B
+24. The saturated sum of 16-bit hex values 6159 + F702 is:
+FFFF
+25. The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N):
+Y
+26. The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N):
+N
+27. The modular sum of 16-bit hex values EEEE + C00C is:
+AEFA
+28. The saturated sum of 16-bit hex values EEEE + C00C is:
+AEFA
+29. The 16-bit operation 9EEE + AB0C has a carry (Y or N):
+Y
+30. The 16-bit operation 9EEE + AB0C has a overflows (Y or N):
+Y
+31. The negation of 16-bit word 0xB00F is:
+4FF1
+32. The negation of 16-bit word 0x2232 is:
+DDCE
+33. The negation of 16-bit word 0x8000 is:
+8000
+34. The negation of 32-bit word 0xFFF329BA is:
+000CD646
+35. Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:
+240
+36. Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:
+-7.96875
 
 Hard (extra credit):
 96.03125 as a 32-bit float, in hex is:
