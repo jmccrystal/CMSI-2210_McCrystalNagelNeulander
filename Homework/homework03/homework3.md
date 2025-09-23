@@ -76,13 +76,23 @@ DDCE
 
 Hard (extra credit):
 96.03125 as a 32-bit float, in hex is:
+42C01000
 -16777216 as a 32-bit float, in hex is:
+CB800000
 The largest finite IEEE-754 single precision float, in hex is:
+7F7FFFFF
 The smallest finite IEEE-754 single precision float, in hex is:
+FF7FFFFF
 The largest nonzero negative IEEE-754 single precision float, in hex is:
+80000001
 The smallest nonezero positive IEEE-754 single precision float, in hex is:
+00000001
 -5.125 X 290 as a 32-bit float, in hex is:
+EDA40000
 2-138 as a 32-bit float, in hex is:
+0000800
 1.5 X 2-143 as a 32-bit float, in hex is:
+00000060
 Try this for a challenge, a puzzle, or the experience:
 Hex C059000000000000, when iterpreted as a 64-bit IEEE-754 pattern, is in decimal:
+-100
