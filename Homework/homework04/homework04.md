@@ -1,4 +1,5 @@
 1. AND/OR/NOT X := (B and C) or A, Y := not-A or C
+   NAND 
 
 2. JPEG in directory
 
