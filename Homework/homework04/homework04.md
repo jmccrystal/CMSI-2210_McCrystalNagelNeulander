@@ -18,17 +18,17 @@ f. Regiser AND 0xFFFFFFF8
 #include <stdio.h>
 
 int main(void) {
-    int N;
-    printf("Enter a positive integer (N): ");
-    if (scanf("%d", &N) != 1) {
+    int limit;
+    printf("Enter a positive integer: ");
+    if (scanf("%d", &limit) != 1) {
         printf("Error: Invalid input.\n");
         return 1;
     }
-    if (N <= 0) {
-        printf("N must be greater than zero.\n");
+    if (limit <= 0) {
+        printf("Input must be greater than zero.\n");
         return 1;
     }
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= limit; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
             printf("fizz-buzz\n");
         } else if (i % 3 == 0) {
@@ -42,7 +42,7 @@ int main(void) {
     return 0;
 }
 
-5.
+5. #Should we use addresses, maybe delete 
 0x0000            JMP     start
 0x0001    total:  0
 0x0002    limit:  256
