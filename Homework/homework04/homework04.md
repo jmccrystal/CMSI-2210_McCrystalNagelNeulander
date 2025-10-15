@@ -43,29 +43,43 @@ int main(void) {
     return 0;
 }
 
-5. #Should we use addresses, maybe delete 
-0x0000            JMP     start
-0x0001    total:  0
-0x0002    limit:  256
-0x0003    one:    1
-0x0004    start:  LOAD    [total]
-0x0005            WRITE   8
-0x0006          ADD     [one]
-0x0007            STORE   [total]
-0x0008            SUB     [limit]
-0x0009            JLZ     start
-0x000A    end:    JMP     end
+5.
+        JMP     start
+total:  0
+limit:  256
+one:    1
+start:  LOAD    [total]
+        WRITE   0x8
+        ADD     [one]
+        STORE   [total]
+        SUB     [limit]
+        JLZ     start
+end:    JMP     end
 
 6.  
-0x0000:  C0000004
-0x0001:  00000000
-0x0002:  00000100
-0x0003:  00000001
-0x0004:  00000001
-0x0005:  30000008
-0x0006:  40000003
-0x0007:  10000001
-0x0008:  50000002
-0x0009:  E0000004
-0x000A:  C000000A
+C0000004
+00000000
+00000100
+00000001
+00000001
+30000008
+40000003
+10000001
+50000002
+E0000004
+C000000A
+
 7. 
+
+        JMP     start
+num1:   0
+mum2:   0
+one:    1
+start:  READ    0x100
+        STORE   [num1]
+        READ    0x100
+        STORE   [num2]
+        LOAD    [num1]
+        MOD     [num2]
+        WRITE   0x200
+end:    JMP     end
