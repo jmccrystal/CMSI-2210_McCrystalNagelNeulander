@@ -104,3 +104,7 @@ temp2:  0
 9.
 JGZ   0x837BBE1
 JZ    0x837BBE1
+
+10. These three XOR lines essentially swap the values of r8 and r9.
+
+b.  This is done by first doing XOR between r8 and r9, and storing it in r8. Then by using the new r8 on r9 in the second step, it returns the original r8, which is stored in r9. Finally, the third XOR uses the new r9 (which now holds the original r8) to recover the original r9 value and store it back into r8.
