@@ -73,13 +73,21 @@ C000000A
 
         JMP     start
 num1:   0
-mum2:   0
-one:    1
+num2:   0
+temp:   0
 start:  READ    0x100
         STORE   [num1]
         READ    0x100
         STORE   [num2]
+check:  LOAD    [num2]
+        JZ      done  
+        STORE   [temp]
         LOAD    [num1]
         MOD     [num2]
+        STORE   [num2]
+        LOAD    [temp]
+        STORE   [num1]
+        JMP     check
+done:   LOAD    [num1]
         WRITE   0x200
 end:    JMP     end
