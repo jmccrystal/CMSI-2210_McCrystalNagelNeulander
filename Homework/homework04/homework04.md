@@ -70,7 +70,6 @@ E0000004
 C000000A
 
 7. 
-
         JMP     start
 num1:   0
 num2:   0
@@ -91,3 +90,17 @@ check:  LOAD    [num2]
 done:   LOAD    [num1]
         WRITE   0x200
 end:    JMP     end
+
+8.
+temp1:  0
+temp2:  0
+        STORE   [temp1]
+        LOAD    [0x30AA]
+        STORE   [temp2]
+        LOAD    [temp1]
+        STORE   [0x30AA]
+        LOAD    [temp2]
+
+9.
+JGZ   0x837BBE1
+JZ    0x837BBE1
