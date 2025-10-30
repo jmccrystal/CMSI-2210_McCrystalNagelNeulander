@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-int dec2bin(int decimal) {
+int dec2bin(unsigned int decimal) {
     char binary_response[33];
     binary_response[32] = '\0';
     for (int pointer = 31; pointer > -1 ; pointer--) {
@@ -22,6 +22,6 @@ int main(int argc, char *argv[]) {
         printf("Decimal number must follow file name \n");
         return 1;
     }
-    dec2bin(atoi(argv[1]));
+    dec2bin((unsigned int)strtoul(argv[1], NULL, 10));
     return 0;
 }
