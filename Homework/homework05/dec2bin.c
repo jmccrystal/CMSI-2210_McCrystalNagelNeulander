@@ -2,7 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-
 int dec2bin(int decimal) {
     char binary_response[33];
     binary_response[32] = '\0';
