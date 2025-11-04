@@ -1,20 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
 #include <time.h>
 
-int holdit() {
-    printf("This program will count how long you can hold your breath, press ENTER to begin, and ENTER when you are out of breath: \n");
-    char enter;
-    scanf("%c",&enter);
-    time_t start_time = time(NULL);
-    scanf("%c",&enter);
-    time_t end_time = time(NULL);
-    printf("You lasted %ld seconds \n", end_time-start_time); 
-    return 0;
-}
-
-int main(int argc, char *argv[]) {
-    holdit();
+int main() {
+    printf("This program will time how long you can hold your breath. Take a deep breath, then press the Enter key. When you absolutely have to exhale, press the enter key again. The duration will be displayed in minutes and seconds.");
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) // wait for user to press enter
+    ;
+    time_t now = time(NULL); // begin timer
+    while ((c = getchar()) != '\n' && c != EOF)
+    ;
+    time_t end = time(NULL);
+    printf("You held your breath for %d minutes and %d seconds.\n", (int)(end - now) / 60, (int)(end-now) % 60);
     return 0;
 }
