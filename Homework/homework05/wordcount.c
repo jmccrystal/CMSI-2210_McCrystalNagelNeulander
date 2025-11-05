@@ -15,7 +15,7 @@ int wordcount(char *filename) {
         if (isspace(ch) && word == 1) {
             count += 1;
             word = 0;
-        } else {
+        } else if (!isspace(ch)) {
             word = 1;
         }
         ch = fgetc(file);
