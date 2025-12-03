@@ -21,7 +21,8 @@ loop_start:
     b loop_start
 
 loop_end:
-    and x0, x23, #1       
+    and x0, x23, #1       // Get LSB (0=Even, 1=Odd)
+    eor x0, x0, #1        // FLIP it using XOR 1. (0 becomes 1, 1 becomes 0)
     add w0, w0, #'0'      
     sub sp, sp, #16
     strb w0, [sp]
