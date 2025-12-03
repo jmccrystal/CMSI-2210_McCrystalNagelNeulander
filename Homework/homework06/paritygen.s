@@ -1,3 +1,8 @@
+/*
+* This is an arm64 file with: clang -o paritygen paritygen.s
+*/
+
+
 .global _main
 .align 2
 
