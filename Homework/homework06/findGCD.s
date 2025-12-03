@@ -1,3 +1,7 @@
+//I assembled it using the following commands:
+//as -o findGCD.o findGCD.s 
+//ld -o findGCD findGCD.o -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start
+
 .global _start
 .align 2
 
