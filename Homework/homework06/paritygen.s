@@ -1,7 +1,6 @@
-/*
-* This is an arm64 file with: clang -o paritygen paritygen.s
-*/
-
+;
+; This is an arm64 program, I used clang -o test paritygen.s
+;
 
 .global _main
 .align 2
