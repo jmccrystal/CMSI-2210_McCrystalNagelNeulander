@@ -1,0 +1,64 @@
+    // Standalone ARM64 program that exercises makeNBO and print_conversion
+    // compiled from makeNBOC.c (included below).
+    .include "makeNBOC.s"
+
+    .section __TEXT,__text,regular,pure_instructions
+    .globl _main
+    .p2align 2
+
+// int main(void)
+_main:
+    stp     x29, x30, [sp, -16]!
+    mov     x29, sp
+
+// Test 1: 0x01020304
+    movz    w4, #0x0304
+    movk    w4, #0x0102, lsl #16
+    bl      _convert_and_print
+
+// Test 2: 0xAABBCCDD
+    movz    w4, #0xccdd
+    movk    w4, #0xaabb, lsl #16
+    bl      _convert_and_print
+
+// Test 3: 0x12345678
+    movz    w4, #0x5678
+    movk    w4, #0x1234, lsl #16
+    bl      _convert_and_print
+
+// Test 4: 0x80000001
+    movz    w4, #0x0001
+    movk    w4, #0x8000, lsl #16
+    bl      _convert_and_print
+
+// Test 5: 0x0FEDCBA9
+    movz    w4, #0xcba9
+    movk    w4, #0x0fed, lsl #16
+    bl      _convert_and_print
+
+    ldp     x29, x30, [sp], #16
+    mov     w0, #0
+    ret
+
+// Helper: expects original value in w4, uses [sp] as swapped flag storage.
+_convert_and_print:
+    stp     x29, x30, [sp, -16]!
+    mov     x29, sp
+    sub     sp, sp, #16             // space for swapped + saved original
+    str     w4, [sp, #4]            // save original
+
+    mov     w0, w4                  // arg0: value
+    mov     x1, sp                  // arg1: &swapped
+    bl      _makeNBO
+
+    mov     w5, w0                  // converted
+    ldr     w3, [sp]                // swapped flag
+    ldr     w4, [sp, #4]            // original
+
+    mov     w0, w4
+    mov     w1, w5
+    mov     w2, w3
+    bl      _print_conversion
+    add     sp, sp, #16
+    ldp     x29, x30, [sp], #16
+    ret
