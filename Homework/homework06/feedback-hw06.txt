@@ -1,0 +1,88 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2025
+=================================
+                                    score
+FINDGCD.NASM                        ------
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+GCDFINDER
+   nasm file assembles  [5 pts.]    5 pts.
+   gcdFinder.c compiles [5 pts.]    5 pts.
+   link both files OK   [5 pts.]    5 pts.
+   nasm returns value   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+PARITYGEN
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+WHICHENDISUP
+   compiles no errors   [5 pts.]    5 pts.
+   runs no errors       [5 pts.]    5 pts.
+MAKENBOC.C
+   compiles no errors   [5 pts.]    5 pts.
+   uses previous func.  [5 pts.]    5 pts.
+   tester compiles      [5 pts.]    3 pts.
+   tester runs          [5 pts.]    3 pts.
+   output correct       [3 pts.]    3 pts.
+MAKENBO.NASM [Extra credit]
+   nasm file assembles  [5 pts.]    5 pts.
+   link all files OK    [5 pts.]    3 pts.
+   calls "C" function   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+
+Total possible points 82
+   plus 18 extra credit
+   possible maximum of 118%
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 78.00/82.00 which is 95.12% plus
+   16 extra credit points which is 111.12% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+problem 1 findGCD.nasm
+   works as advertised
+
+problem 2 findGCDfunc.nasm & gcdFinder.c
+   works as advertised
+
+problem 3 paritygen.nasm
+   works as advertised
+
+problem 4 whichEndIsUp.c
+   works as advertised
+
+problem 5 makeNBOC.c & makeNBOCtest.c
+   this code suffers from multiple definitions of functions.  This is
+      likely because you are including a "C" source code file.  NEVER
+      DO THIS!!  It is very bad form to write a "C" source file that
+      includes another "C" source file.  You should ONLY include ".h"
+      files.  I'll take it on faith that you got this to work somehow,
+      but I don't know what you did since you don't have any of the
+      required file headers in these files with the build information.
+   I'm trusting you on this one....
+
+problem 6 makeNBOC.c & makeNBON.nasm
+   same comment as for problem 5
+
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   Homework01  100.00% of  5 points =  5.00 points
+   Homework02  100.00% of  5 points =  5.00 points
+   Homework03  104.22% of  5 points =  5.21 points
+   Homework04  100.00% of  5 points =  5.00 points
+   Homework05   98.00% of 10 points =  9.80 points
+   homework06  111.12% of 15 points = 16.69 points
+                      semester total: 46.70 out of 45.00 = 103.78%
+                             which is an A-plus
+
+Great work!  It's been wonderful having you three in class this semester!
+Best wishes for a great holiday break and I look forward to seeing you all
+around campus in the spring!
